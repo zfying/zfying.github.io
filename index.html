@@ -130,7 +130,17 @@
 
         /* Publication styles */
         .publication-container {
-            margin: 40px 0;
+            margin: 16px 0 40px;
+        }
+
+        .publication-section-title {
+            margin: 32px 0 0;
+            font-size: 1.15em;
+            color: #555;
+        }
+
+        .publication-section.hidden {
+            display: none;
         }
 
         .publication-card {
@@ -441,14 +451,16 @@
     <div class="filter-controls">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="Interpretability">Interpretability</button>
-        <button class="filter-btn" data-filter="Natural Intelligence">Natural Intelligence</button>
         <button class="filter-btn" data-filter="Efficiency">Efficiency</button>
+        <button class="filter-btn" data-filter="Natural Intelligence">Natural Intelligence</button>
         <button class="filter-btn" data-filter="AI Safety">AI Safety</button>
         <!-- <button class="filter-btn" data-filter="Evaluation">Evaluation</button> -->
     </div>
 
-    <div class="publication-container">
-        <!-- <div class="publication-card">
+    <div class="publication-section">
+        <h3 class="publication-section-title">Preprints</h3>
+        <div class="publication-container">
+            <!-- <div class="publication-card">
             <div class="publication-image">
             </div>
             <div class="publication-labels">
@@ -465,7 +477,7 @@
             </div>
         </div> -->
 
-        <!-- <div class="publication-card">
+            <!-- <div class="publication-card">
             <div class="publication-image">
             </div>
             <div class="publication-labels">
@@ -481,7 +493,7 @@
             </div>
         </div> -->
 
-        <!-- <div class="publication-card">
+            <!-- <div class="publication-card">
             <div class="publication-image">
             </div>
             <div class="publication-labels">
@@ -498,375 +510,413 @@
             </div>
         </div> -->
 
-        <!-- <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_multi_resource.webp"
-                    alt="Space, Time, Energy, and Data: A Multi-resource Cost Framework for Neural Computation"
-                    width="600" height="232" loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-natural-intelligence">Natural Intelligence</span>
-                <span class="label label-efficiency">Efficiency</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Space, Time, Energy, and Data: A Multi-resource Cost Framework for Neural
-                    Computation</h3>
-                <p class="publication-authors">Eivinas Butkus, Jascha Achterberg, Nicholas Blauch, Dmitri Chklovskii,
-                    Thomas Griffiths, Tim Kietzmann, Grace Lindsay, Xaq Pitkow, Paul Schrater, Alan Stocker, Xue-Xin
-                    Wei, <strong>Zhuofan Ying</strong>, Richard Zemel, Nikolaus Kriegeskorte</p>
-                <p class="publication-venue">arXiv</p>
-                <div class="publication-links">
-                    <a href="#">paper</a>
+            <!-- <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_multi_resource.webp"
+                        alt="Space, Time, Energy, and Data: A Multi-resource Cost Framework for Neural Computation"
+                        width="600" height="232" loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-natural-intelligence">Natural Intelligence</span>
+                    <span class="label label-efficiency">Efficiency</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Space, Time, Energy, and Data: A Multi-resource Cost Framework for
+                        Neural
+                        Computation</h3>
+                    <p class="publication-authors">Eivinas Butkus, Jascha Achterberg, Nicholas Blauch, Dmitri
+                        Chklovskii,
+                        Thomas Griffiths, Tim Kietzmann, Grace Lindsay, Xaq Pitkow, Paul Schrater, Alan Stocker, Xue-Xin
+                        Wei, <strong>Zhuofan Ying</strong>, Richard Zemel, Nikolaus Kriegeskorte</p>
+                    <p class="publication-venue">arXiv</p>
+                    <div class="publication-links">
+                        <a href="#">paper</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_cspd.webp"
+                        alt="Composable Soft-Prompt Distillation of RL Experts: Toward Continual Post-Training"
+                        width="1400" height="404" loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-efficiency">Efficiency</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Composable Soft-Prompt Distillation of RL Experts: Toward Continual
+                        Post-Training</h3>
+                    <p class="publication-authors">Zhen Zhang*, Changyi Yang*, Xuehai He, Chengzhi Liu, Yutong Yin,
+                        Ziyue Liu, Zhuoran Yin, Yangmin Li, Zhihan Liu, Jisen Li, Mingyu Jin, Chuhan Li, Zhaotian Weng,
+                        Ruoyu He, Wenyao Gao, Jiaxin Deng, Chenwei Wu, Hui Shen, Wenhao Chai, Chenyang Zhao,
+                        <strong>Zhuofan Ying</strong>, Kieran Liu, Andrew Chen, Pony Ma, Zhaoran Wang, Alkesh Patel,
+                        Zhe Gan, Xin Eric Wang
+                    </p>
+                    <p class="publication-venue">arXiv</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2611.27376v1">paper</a>
+                    </div>
                 </div>
             </div>
-        </div> -->
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_peft_brain.webp" alt="Scaling Parameter-efficient Fine-tuning for Brain Encoding"
-                    width="900" height="664" loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-natural-intelligence">Natural Intelligence</span>
-                <span class="label label-efficiency">Efficiency</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Scaling Parameter-efficient Fine-tuning for Brain Encoding</h3>
-                <p class="publication-authors"><strong>Zhuofan Ying</strong>, Guanglong Sun, Nolan Ho, Kieran Liu,
-                    Rui Yang, Andrew Chen, Nikolaus Kriegeskorte, Pony Ma, Hossein Adeli</p>
-                <p class="publication-venue">arXiv</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2610.26802">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/zfying/brain-lora">code</a>
-                    <span>/</span>
-                    <a href="https://www.mindlab.im/updates/scaling-peft-towards-brain-foundation-models">blog</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_peft_brain.webp"
+                        alt="Scaling Parameter-Efficient Fine-Tuning for Brain Encoding" width="900" height="664"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-natural-intelligence">Natural Intelligence</span>
+                    <span class="label label-efficiency">Efficiency</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Scaling Parameter-Efficient Fine-Tuning for Brain Encoding</h3>
+                    <p class="publication-authors"><strong>Zhuofan Ying</strong>, Guanglong Sun, Nolan Ho, Kieran Liu,
+                        Rui Yang, Andrew Chen, Nikolaus Kriegeskorte, Pony Ma, Hossein Adeli</p>
+                    <p class="publication-venue">arXiv</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2610.26802">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/zfying/brain-lora">code</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_syco_circuits.webp"
-                    alt="Tracing Mechanisms of Sycophantic Agreement in Language Models" width="817" height="305"
-                    loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-interpretability">Interpretability</span>
-                <span class="label label-safety">AI Safety</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Tracing Mechanisms of Sycophantic Agreement in Language Models</h3>
-                <p class="publication-authors">Sixing Chen, <strong>Zhuofan Ying</strong>, Logan Riggs Smith, Jeremy
-                    Wertheimer, Natalie Shapira
-                </p>
-                <p class="publication-venue">arXiv</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2609.35822">paper</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_syco_circuits.webp"
+                        alt="Tracing Mechanisms of Sycophantic Agreement in Language Models" width="817" height="305"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-interpretability">Interpretability</span>
+                    <span class="label label-safety">AI Safety</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Tracing Mechanisms of Sycophantic Agreement in Language Models</h3>
+                    <p class="publication-authors">Sixing Chen, <strong>Zhuofan Ying</strong>, Logan Riggs Smith, Jeremy
+                        Wertheimer, Natalie Shapira
+                    </p>
+                    <p class="publication-venue">arXiv</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2609.35822">paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_syco.webp"
-                    alt="Sycophantic Agreement Transfers with Neutral Data via Contrastive Preference Optimization"
-                    width="900" height="681" loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-interpretability">Interpretability</span>
-                <span class="label label-safety">AI Safety</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Sycophantic Agreement Transfers with Neutral Data via Contrastive
-                    Preference Optimization</h3>
-                <p class="publication-authors">Camila Blank, <strong>Zhuofan Ying</strong>, Christopher
-                    Potts, Peter Hase, Jing Huang</p>
-                <p class="publication-venue">CoLM 2026, Actionable Interpretability Workshop</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2608.31079">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/camilablank/sycophancy-dpo">code</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_attention_energy.webp" alt="How attention saves energy in vision" width="900"
+                        height="375" loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-natural-intelligence">Natural Intelligence</span>
+                    <span class="label label-efficiency">Efficiency</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">How Attention Saves Energy in Vision</h3>
+                    <p class="publication-authors">Eivinas Butkus, <strong>Zhuofan Ying</strong>, Nikolaus Kriegeskorte
+                    </p>
+                    <p class="publication-venue">bioRxiv</p>
+                    <div class="publication-links">
+                        <a href="https://www.biorxiv.org/content/10.64898/2026.03.18.710397v1">paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_macaron_v1.webp" alt="Macaron V1 Technical Report" width="600" height="366"
-                    loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-efficiency">Efficiency</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Macaron-V1: Towards Open Continual Learning with Self-Improvement and
-                    Mixture-of-LoRA</h3>
-                <p class="publication-authors"><strong>Mind Lab</strong></p>
-                <p class="publication-venue">Technical Report, 2026</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2608.09819">paper</a>
-                    <span>/</span>
-                    <a href="https://macaron.im/mindlab/research/introducing-macaron-v1">blog</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_truth_spec.webp" alt="truth spectrum" width="719" height="351" loading="lazy"
+                        decoding="async">
                 </div>
-            </div>
-        </div>
-
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_condorcet.webp"
-                    alt="Condorcet and Beyond: An Empirical Comparison of Voting Rules" width="900" height="698"
-                    loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-natural-intelligence">Natural Intelligence</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Condorcet and Beyond: An Empirical Comparison of Voting Rules</h3>
-                <p class="publication-authors">Igor Douven, Nikolaus Kriegeskorte, Patrick Stinson, <strong>Zhuofan
-                        Ying</strong></p>
-                <p class="publication-venue">Cognitive Science, 2026</p>
-                <div class="publication-links">
-                    <a href="https://doi.org/10.1111/cogs.70242">paper</a>
+                <div class="publication-labels">
+                    <span class="label label-interpretability">Interpretability</span>
+                    <span class="label label-safety">AI Safety</span>
                 </div>
-            </div>
-        </div>
-
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_probe_af.webp" alt="Sample-Level White-Box Monitoring of Alignment Faking"
-                    width="641" height="582" loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-interpretability">Interpretability</span>
-                <span class="label label-safety">AI Safety</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Sample-Level White-Box Monitoring of Alignment Faking</h3>
-                <p class="publication-authors">Lakshya Chaudhry*, Tianqin Meng*, Anthony Nguyen*, Yashraj Panwar*, Yuqi
-                    Sun,
-                    <strong>Zhuofan Ying</strong><span class="envelope">&#9993;</span>
-                </p>
-                <p class="publication-venue">ICML 2026, Mechanistic Interpretability Workshop<br>ICML 2026, Technical AI
-                    Governance Research (TAIGR) Workshop</p>
-                <div class="publication-links">
-                    <a href="https://openreview.net/pdf?id=DwISGjooDa">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/zfying/probe-af">code</a>
+                <div class="publication-content">
+                    <h3 class="publication-title">The Truthfulness Spectrum: How General Are Truth Directions?</h3>
+                    <p class="publication-authors"><strong>Zhuofan Ying</strong>, Shauli Ravfogel,
+                        Nikolaus Kriegeskorte,
+                        Peter Hase</p>
+                    <p class="publication-venue">arXiv</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2602.20273">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/zfying/truth_spec">code</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_maha_cossim.webp"
-                    alt="Comparing Linear Probes with Mahalanobis Cosine Similarity" width="900" height="315"
-                    loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-interpretability">Interpretability</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Comparing Linear Probes with Mahalanobis Cosine Similarity</h3>
-                <p class="publication-authors"><strong>Zhuofan Ying</strong>, Peter Hase, Nikolaus Kriegeskorte</p>
-                <p class="publication-venue">EMNLP 2026 (Main)</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2606.19603">paper</a>
+    <div class="publication-section">
+        <h3 class="publication-section-title">Publications</h3>
+        <div class="publication-container">
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_face_geo.webp" alt="face geometry" width="839" height="453" loading="lazy"
+                        decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-natural-intelligence">Natural Intelligence</span>
+                    <span class="label label-efficiency">Efficiency</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Efficient Task Generalization and Humanlike Face Perception in Models
+                        that Learn to Discriminate Face Geometry</h3>
+                    <p class="publication-authors">Seojin Lee, <strong>Zhuofan Ying</strong>, Ahana Dey, You-Nah Jeon,
+                        Elias
+                        Issa</p>
+                    <p class="publication-venue">Nature Machine Intelligence (accepted)</p>
+                    <div class="publication-links">
+                        <a href="https://www.biorxiv.org/content/10.64898/2026.01.31.703048v1">paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_peft.webp"
-                    alt="On the Scaling of PEFT: Million Personal Models of Trillion Parameters" width="900"
-                    height="578" loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-efficiency">Efficiency</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">On the Scaling of PEFT: Million Personal Models of Trillion Parameters
-                </h3>
-                <p class="publication-authors"><strong>Mind Lab</strong></p>
-                <p class="publication-venue">Technical Report, 2026</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2606.02437">paper</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_maha_cossim.webp"
+                        alt="Comparing Linear Probes with Mahalanobis Cosine Similarity" width="900" height="315"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-interpretability">Interpretability</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Comparing Linear Probes with Mahalanobis Cosine Similarity</h3>
+                    <p class="publication-authors"><strong>Zhuofan Ying</strong>, Peter Hase, Nikolaus Kriegeskorte</p>
+                    <p class="publication-venue">EMNLP 2026</p>
+                    <div class="publication-links">
+                        <a href="https://aclanthology.org/2026.emnlp-main.946/">paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_mint.webp"
-                    alt="MinT: Managed Infrastructure for Training and Serving Millions of LLMs" width="900"
-                    height="611" loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-efficiency">Efficiency</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">MinT: Managed Infrastructure for Training and Serving Millions of LLMs
-                </h3>
-                <p class="publication-authors"><strong>Mind Lab</strong></p>
-                <p class="publication-venue">Technical Report, 2026</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2605.13779">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/MindLab-Research/mindlab-toolkit">code</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_syco.webp"
+                        alt="Sycophantic Agreement Transfers with Neutral Data via Contrastive Preference Optimization"
+                        width="900" height="681" loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-interpretability">Interpretability</span>
+                    <span class="label label-safety">AI Safety</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Sycophantic Agreement Transfers with Neutral Data via Contrastive
+                        Preference Optimization</h3>
+                    <p class="publication-authors">Camila Blank, <strong>Zhuofan Ying</strong>, Christopher
+                        Potts, Peter Hase, Jing Huang</p>
+                    <p class="publication-venue">CoLM 2026, Actionable Interpretability Workshop</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2608.31079">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/camilablank/sycophancy-dpo">code</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_attention_energy.webp" alt="How attention saves energy in vision" width="900"
-                    height="375" loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-natural-intelligence">Natural Intelligence</span>
-                <span class="label label-efficiency">Efficiency</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">How Attention Saves Energy in Vision</h3>
-                <p class="publication-authors">Eivinas Butkus, <strong>Zhuofan Ying</strong>, Nikolaus Kriegeskorte</p>
-                <p class="publication-venue">bioRxiv</p>
-                <div class="publication-links">
-                    <a href="https://www.biorxiv.org/content/10.64898/2026.03.18.710397v1">paper</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_macaron_v1.webp" alt="Macaron V1 Technical Report" width="600" height="366"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-efficiency">Efficiency</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Macaron-V1: Towards Open Continual Learning with Self-Improvement and
+                        Mixture-of-LoRA</h3>
+                    <p class="publication-authors"><strong>Mind Lab</strong></p>
+                    <p class="publication-venue">Technical Report, 2026</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2608.09819">paper</a>
+                        <span>/</span>
+                        <a href="https://macaron.im/mindlab/research/introducing-macaron-v1">blog</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_truth_spec.webp" alt="truth spectrum" width="719" height="351" loading="lazy"
-                    decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-interpretability">Interpretability</span>
-                <span class="label label-safety">AI Safety</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">The Truthfulness Spectrum: How General Are Truth Directions?</h3>
-                <p class="publication-authors"><strong>Zhuofan Ying</strong>, Shauli Ravfogel,
-                    Nikolaus Kriegeskorte,
-                    Peter Hase</p>
-                <p class="publication-venue">arXiv</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2602.20273">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/zfying/truth_spec">code</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_probe_af.webp" alt="Sample-Level White-Box Monitoring of Alignment Faking"
+                        width="641" height="582" loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-interpretability">Interpretability</span>
+                    <span class="label label-safety">AI Safety</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Sample-Level White-Box Monitoring of Alignment Faking</h3>
+                    <p class="publication-authors">Lakshya Chaudhry*, Tianqin Meng*, Anthony Nguyen*, Yashraj Panwar*,
+                        Yuqi
+                        Sun,
+                        <strong>Zhuofan Ying</strong><span class="envelope">&#9993;</span>
+                    </p>
+                    <p class="publication-venue">ICML 2026, Mechanistic Interpretability Workshop<br>ICML 2026,
+                        Technical AI
+                        Governance Research (TAIGR) Workshop</p>
+                    <div class="publication-links">
+                        <a href="https://openreview.net/pdf?id=DwISGjooDa">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/zfying/probe-af">code</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_face_geo.webp" alt="face geometry" width="839" height="453" loading="lazy"
-                    decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-natural-intelligence">Natural Intelligence</span>
-                <span class="label label-efficiency">Efficiency</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Efficient Task Generalization and Humanlike Face Perception in Models
-                    that Learn to Discriminate Face Geometry</h3>
-                <p class="publication-authors">Seojin Lee, <strong>Zhuofan Ying</strong>, Ahana Dey, You-Nah Jeon, Elias
-                    Issa</p>
-                <p class="publication-venue">bioRxiv</p>
-                <div class="publication-links">
-                    <a href="https://www.biorxiv.org/content/10.64898/2026.01.31.703048v1">paper</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_condorcet.webp"
+                        alt="Condorcet and Beyond: An Empirical Comparison of Voting Rules" width="900" height="698"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-natural-intelligence">Natural Intelligence</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Condorcet and Beyond: An Empirical Comparison of Voting Rules</h3>
+                    <p class="publication-authors">Igor Douven, Nikolaus Kriegeskorte, Patrick Stinson, <strong>Zhuofan
+                            Ying</strong></p>
+                    <p class="publication-venue">Cognitive Science, 2026</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1111/cogs.70242">paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_token_entanglement.webp" alt="Token Entanglement" width="397" height="154"
-                    loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-interpretability">Interpretability</span>
-                <span class="label label-safety">AI Safety</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Token Entanglement in Subliminal Learning</h3>
-                <p class="publication-authors">Amir Zur, <strong>Zhuofan Ying</strong>, Alexander Russell Loftus, Kerem
-                    Şahin, Steven Yu, Lucia Quirke, Tamar Rott Shaham, Natalie Shapira, Hadas Orgad, David Bau</p>
-                <p class="publication-venue">NeurIPS 2025, Mechanistic Interpretability Workshop</p>
-                <div class="publication-links">
-                    <a href="https://openreview.net/pdf?id=auKgpBRzIW">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/loftusa/owls">code</a>
-                    <span>/</span>
-                    <a href="https://owls.baulab.info/">blog</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_peft.webp"
+                        alt="On the Scaling of PEFT: Million Personal Models of Trillion Parameters" width="900"
+                        height="578" loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-efficiency">Efficiency</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">On the Scaling of PEFT: Million Personal Models of Trillion Parameters
+                    </h3>
+                    <p class="publication-authors"><strong>Mind Lab</strong></p>
+                    <p class="publication-venue">Technical Report, 2026</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2606.02437">paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_adacont.webp" alt="Adaptive Contextual Perception" width="900" height="368"
-                    loading="lazy" decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-interpretability">Interpretability</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Adaptive Contextual Perception: How to Generalize to New Backgrounds and
-                    Ambiguous Objects</h3>
-                <p class="publication-authors"><strong>Zhuofan Ying</strong>, Peter Hase, Mohit Bansal
-                </p>
-                <p class="publication-venue">NeurIPS 2023</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2306.05963">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/zfying/AdaptiveContext">code</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_mint.webp"
+                        alt="MinT: Managed Infrastructure for Training and Serving Millions of LLMs" width="900"
+                        height="611" loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-efficiency">Efficiency</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">MinT: Managed Infrastructure for Training and Serving Millions of LLMs
+                    </h3>
+                    <p class="publication-authors"><strong>Mind Lab</strong></p>
+                    <p class="publication-venue">Technical Report, 2026</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2605.13779">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/MindLab-Research/mindlab-toolkit">code</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_visfis.webp" alt="VisFIS" width="900" height="301" loading="lazy"
-                    decoding="async">
-            </div>
-            <div class="publication-labels">
-                <span class="label label-interpretability">Interpretability</span>
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">VisFIS: Visual Feature Importance Supervision with
-                    Right-for-the-Right-Reason Objectives</h3>
-                <p class="publication-authors"><strong>Zhuofan Ying</strong>*, Peter Hase*, Mohit
-                    Bansal</p>
-                <p class="publication-venue">NeurIPS 2022</p>
-                <div class="publication-links">
-                    <a href="https://arxiv.org/abs/2206.11212">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/zfying/visfis">code</a>
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_token_entanglement.webp" alt="Token Entanglement" width="397" height="154"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-interpretability">Interpretability</span>
+                    <span class="label label-safety">AI Safety</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Token Entanglement in Subliminal Learning</h3>
+                    <p class="publication-authors">Amir Zur, <strong>Zhuofan Ying</strong>, Alexander Russell Loftus,
+                        Kerem
+                        Şahin, Steven Yu, Lucia Quirke, Tamar Rott Shaham, Natalie Shapira, Hadas Orgad, David Bau</p>
+                    <p class="publication-venue">NeurIPS 2025, Mechanistic Interpretability Workshop</p>
+                    <div class="publication-links">
+                        <a href="https://openreview.net/pdf?id=auKgpBRzIW">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/loftusa/owls">code</a>
+                        <span>/</span>
+                        <a href="https://owls.baulab.info/">blog</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-card">
-            <div class="publication-image">
-                <img src="images/paper_action.webp" alt="Deep Learning Recognition" width="900" height="663"
-                    loading="lazy" decoding="async">
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_adacont.webp" alt="Adaptive Contextual Perception" width="900" height="368"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-interpretability">Interpretability</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Adaptive Contextual Perception: How to Generalize to New Backgrounds
+                        and
+                        Ambiguous Objects</h3>
+                    <p class="publication-authors"><strong>Zhuofan Ying</strong>, Peter Hase, Mohit Bansal
+                    </p>
+                    <p class="publication-venue">NeurIPS 2023</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2306.05963">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/zfying/AdaptiveContext">code</a>
+                    </div>
+                </div>
             </div>
-            <div class="publication-labels">
-                <span class="label label-evaluation">Evaluation</span>
-                <span class="label label-natural-intelligence">Natural Intelligence</span>
+
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_visfis.webp" alt="VisFIS" width="900" height="301" loading="lazy"
+                        decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-interpretability">Interpretability</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">VisFIS: Visual Feature Importance Supervision with
+                        Right-for-the-Right-Reason Objectives</h3>
+                    <p class="publication-authors"><strong>Zhuofan Ying</strong>*, Peter Hase*, Mohit
+                        Bansal</p>
+                    <p class="publication-venue">NeurIPS 2022</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2206.11212">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/zfying/visfis">code</a>
+                    </div>
+                </div>
             </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Can Deep Learning Recognize Subtle Human Activities?</h3>
-                <p class="publication-authors">Vincent Jacquot, <strong>Zhuofan Ying</strong>, Gabriel Kreiman</p>
-                <p class="publication-venue">CVPR 2020</p>
-                <div class="publication-links">
-                    <a
-                        href="https://openaccess.thecvf.com/content_CVPR_2020/html/Jacquot_Can_Deep_Learning_Recognize_Subtle_Human_Activities_CVPR_2020_paper.html">paper</a>
-                    <span>/</span>
-                    <a href="https://github.com/kreimanlab/DeepLearning-vs-HighLevelVision">code</a>
+
+            <div class="publication-card">
+                <div class="publication-image">
+                    <img src="images/paper_action.webp" alt="Deep Learning Recognition" width="900" height="663"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="publication-labels">
+                    <span class="label label-evaluation">Evaluation</span>
+                    <span class="label label-natural-intelligence">Natural Intelligence</span>
+                </div>
+                <div class="publication-content">
+                    <h3 class="publication-title">Can Deep Learning Recognize Subtle Human Activities?</h3>
+                    <p class="publication-authors">Vincent Jacquot, <strong>Zhuofan Ying</strong>, Gabriel Kreiman</p>
+                    <p class="publication-venue">CVPR 2020</p>
+                    <div class="publication-links">
+                        <a
+                            href="https://openaccess.thecvf.com/content_CVPR_2020/html/Jacquot_Can_Deep_Learning_Recognize_Subtle_Human_Activities_CVPR_2020_paper.html">paper</a>
+                        <span>/</span>
+                        <a href="https://github.com/kreimanlab/DeepLearning-vs-HighLevelVision">code</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -980,7 +1030,8 @@
 
     <h2>Service</h2>
     <ul class="service-list">
-        <li><strong>Reviewer:</strong> NeurIPS, ICML, CVPR, AAAI, TMLR, BMVC, WACV (ICML 2026 Gold Reviewer)</li>
+        <li><strong>Reviewer:</strong> NeurIPS, ICML, ICLR, CVPR, ICCV, AAAI, TMLR, BMVC, WACV (ICML 2026 Gold Reviewer)
+        </li>
         <li><strong>Teaching:</strong> Human Brain Imaging, Statistics for Behavioral Scientists, Science of Psychology
         </li>
         <li><strong>Content creator:</strong> <a href="https://neuromatch.io/neuroai/">Neuromatch NeuroAI Course</a>
@@ -1025,6 +1076,12 @@
                         } else {
                             card.classList.add('hidden');
                         }
+                    });
+
+                    // Hide a section heading when none of its cards match the filter
+                    document.querySelectorAll('.publication-section').forEach(section => {
+                        const anyVisible = section.querySelector('.publication-card:not(.hidden)');
+                        section.classList.toggle('hidden', !anyVisible);
                     });
                 });
             });
